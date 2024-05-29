@@ -7,9 +7,9 @@ output "public_subnet_ids" {
 }
 
 output "instance_id" {
-  value = aws_instance.web.id
+  value = aws_instance.simple-ec2.id
 }
 
 output "instance_public_ip" {
-  value = aws_instance.web.public_ip
+  value = aws_instance.simple-ec2.public_ip
 }
