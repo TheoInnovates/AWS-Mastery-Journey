@@ -49,3 +49,11 @@ This project sets up a simple EC2 instance with Terraform, including a VPC, publ
    ```bash
    ssh -i /path/to/your-key.pem ec2-user@<instance_public_ip>
    ```
+
+6. Clean Up
+
+   To destroy the resources created by this project:
+
+   ```bash
+   terraform destroy
+   ```
