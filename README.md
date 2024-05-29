@@ -35,3 +35,29 @@ Welcome to the AWS Mastery Journey! This repository contains a series of project
    ```bash
    aws --version
    ```
+
+### Steps to Create an Admin User in AWS
+
+1. **Open the AWS Management Console**:
+
+   - Navigate to the IAM (Identity and Access Management) service.
+
+2. **Create a new user**
+
+   - Click on "Users" in the left-hand menu.
+   - Click on the "Add user" button.
+   - Enter a username (e.g., terraform-admin).
+   - Select "Programmatic access" for the access type.
+   - Click "Next: Permissions".
+
+3. **Attach policies**
+
+   - Select "Attach existing policies directly".
+   - Search for and select the AdministratorAccess policy.
+   - Click "Next: Tags" (optional).
+   - Click "Next: Review".
+   - Click "Create user".
+
+4. **Download the credentials**
+
+   - After the user is created, download the .csv file with the access key and secret key, or copy them to a secure location.
