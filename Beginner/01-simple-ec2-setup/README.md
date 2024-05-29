@@ -13,6 +13,6 @@ This project sets up a simple EC2 instance with Terraform, including a VPC, publ
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/learn-aws-with-me.git
-   cd learn-aws-with-me/01-simple-ec2-setup
+   git clone https://github.com/TheoInnovates/AWS-Mastery-Journey.git
+   cd AWS-Mastery-Journey/Beginner/01-simple-ec2-setup
    ```
