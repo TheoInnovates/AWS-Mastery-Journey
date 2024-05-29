@@ -46,7 +46,6 @@ This project sets up a simple EC2 instance with Terraform, including a VPC, publ
 
    After the apply is complete, Terraform will output the public IP address of the EC2 instance. Use this to SSH into the instance:
 
-   ```
+   ```bash
    ssh -i /path/to/your-key.pem ec2-user@<instance_public_ip>
-
    ```
