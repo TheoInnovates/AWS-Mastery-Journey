@@ -35,6 +35,29 @@ To manage Terraform state files, you need to set up an S3 bucket for storage and
    - Leave the default settings for other options.
    - Click "Create table".
 
+## Steps to Create an SSH Key Pair
+
+To connect to your EC2 instances, you'll need an SSH key pair. Follow these steps to create one:
+
+1. **Open the AWS Management Console and navigate to the EC2 service.**
+
+2. **Create a new key pair**
+
+   - In the left-hand menu, click on "Key Pairs" under "Network & Security"
+   - Click on the "Create key pair" button.
+   - Enter a name for your key pair (e.g., my-key-pair).
+   - Select "RSA" for the key pair type and "pem" for the private key file format.
+   - Click "Create key pair".
+
+3. **Download the private key file**
+
+   - The private key file (.pem file) will be automatically downloaded. Save it in a secure location.
+   - Ensure the private key file has the correct permissions:
+
+   ```bash
+   chmod 400 /path/to/your-key.pem
+   ```
+
 ## Configuring Terraform to Use the S3 Bucket and DynamoDB Table
 
 After creating the S3 bucket and DynamoDB table, configure your Terraform backend to use these resources. Add a `backend.tf` file to your Terraform configuration with the following content:
