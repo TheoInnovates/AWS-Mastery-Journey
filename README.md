@@ -61,3 +61,18 @@ Welcome to the AWS Mastery Journey! This repository contains a series of project
 4. **Download the credentials**
 
    - After the user is created, download the .csv file with the access key and secret key, or copy them to a secure location.
+
+### Configure AWS CLI
+
+1. **Configure the AWS CLI with your new user**
+
+   ```bash
+    aws configure
+   ```
+
+   When prompted, enter the following information:
+
+   - AWS Access Key ID: Enter the access key ID from the .csv file.
+   - AWS Secret Access Key: Enter the secret access key from the .csv file.
+   - Default region name: Enter your preferred region (e.g., us-east-1).
+   - Default output format: Enter json.
